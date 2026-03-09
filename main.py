@@ -469,6 +469,15 @@ def parse_query(prompt: str, df: pd.DataFrame) -> dict:
 
 # ─── Routes ───────────────────────────────────────────────────────────────────
 
+@app.get("/")
+def root():
+    return {
+        "message": "NexVision AI API is running",
+        "status": "healthy",
+        "endpoints": ["/health", "/upload", "/query"]
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "ok", "service": "DataSense AI API", "datasets_loaded": len(uploaded_datasets)}
