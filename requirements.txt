@@ -1,8 +1,8 @@
 fastapi==0.115.0
-uvicorn[standard]==0.30.6
+uvicorn==0.30.6
 pandas==2.2.2
-python-multipart==0.0.9
 numpy==2.0.2
+python-multipart==0.0.9
 openpyxl==3.1.5
-python-dotenv
-google-generativeai==2.0.2
+python-dotenv==1.0.1
+google-generativeai==0.7.2
